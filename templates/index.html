@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline'"
+    />
+    <title>Setup Page</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/index_Features-Boxed.css" />
+    <link rel="stylesheet" href="assets/css/index_Highlight-Clean.css" />
+    <link rel="stylesheet" href="assets/css/index_styles.css" />
+  </head>
+
+  <body class="text-center">
+    <div class="highlight-clean">
+      <div class="container">
+        <div class="intro">
+          <h2 class="text-center">Setup</h2>
+        </div>
+        <div class="buttons">
+          <p class="text-center">
+            1) Click the following button to open your VTOP login and open your
+            time table to download it
+          </p>
+          <button
+            class="btn btn-primary"
+            role="button"
+            id="vtop_btn"
+            onclick='loadChildWindow("https://vtop.vit.ac.in")'
+            style="opacity: 1;"
+          >
+            Download Timetable</button
+          ><br />
+          <p class="text-center" id="error_btn1" style="display: none;">
+            Process not completed. Please try again
+          </p>
+        </div>
+        <div class="buttons">
+          <p class="text-center">
+            2) Click the following button and login to your Microsoft Teams
+            Account
+          </p>
+          <button
+            class="btn btn-primary"
+            role="button"
+            id="msTeams_btn"
+            onclick="loadChildWindow(null)"
+            disabled="true"
+            style="opacity: 0.2;"
+          >
+            Integrate with Microsoft Teams</button
+          ><br />
+          <p class="text-center" id="error_btn2" style="display: none;">
+            Process not completed. Please try again
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Untitled</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body
+    class="text-center flex-grow-0 flex-shrink-1 justify-content-center align-items-start flex-wrap"
+  >
+    <div>
+      <div class="container text-center d-inline-block">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="btn-group"
+              role="group"
+              style="padding: 1px; margin: -2px; height: 55px;"
+            >
+              <button
+                class="btn btn-primary"
+                type="button"
+                style="margin: 10px; height: 34px; padding: 4px;"
+                onclick="submitHtml()"
+              >
+                Submit</button
+              ><button
+                class="btn btn-primary"
+                type="button"
+                style="height: 34px; margin: 10px; padding: 4px;"
+              >
+                Reload Window
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="submit_btn" style="display: none;">
+          <div class="col-md-12">
+            <div class="alert alert-success" role="alert">
+              <span style="margin: -15px; padding: 0px; width: 0px;"
+                ><strong
+                  >Please open Time Table and then press Submit&nbsp;</strong
+                ><br
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../index.js"></script>
+
+    <!-- <script>
+      window.jQuery = window.$ = require("jquery");
+    </script> -->
+
+    <!-- <script>
+      if (typeof module === "object") {
+        window.module = module;
+        module = undefined;
+      }
+    </script> -->
+    <!-- <script>
+      if (window.module) module = window.module;
+    </script> -->
+
+    <!-- <script>
+      window.$ = window.jQuery = require("assets/js/jquery.min.js");
+      var Bootstrap = require("assets/bootstrap/js/bootstrap.min.js");
+    </script> -->
+  </body>
+</html>

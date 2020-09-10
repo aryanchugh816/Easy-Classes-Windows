@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Downloading Easy Classes Update</title>
+  </head>
+  <body>
+    <progress style="width: 100%" value="0" max="100"></progress>
+  </body>
+
+  <script>
+    $ = require("jquery");
+
+    const { ipcRenderer } = require("electron");
+
+    setInterval(() => {
+      let progress = ipcRenderer.sendSync("download-progress-request");
+
+      $("progress").val(progress);
+    }, 1000);
+  </script>
+</html>

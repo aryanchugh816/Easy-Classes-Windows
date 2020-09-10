@@ -1,0 +1,56 @@
+{
+  "name": "Easy_Classes",
+  "version": "1.0.0",
+  "description": "Be_more_efficient_as_my_software_attends_your_classes_for_you",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "mac": "electron-builder -m",
+    "win": "electron-builder -w --config.extraFiles=./Utilities",
+    "build": "electron-builder -mwl",
+    "make-cert": "electron-builder create-self-signed-cert -p Arc24_Inc",
+    "publish": "electron-builder build -w --config.extraFiles=./Utilities -p onTagOrDraft"
+  },
+  "build": {
+    "directories": {
+      "buildResources": "."
+    },
+    "mac": {
+      "publish": [
+        "github"
+      ],
+      "category": "public.app-category.productivity"
+    },
+    "win": {
+      "publish": [
+        "github"
+      ],
+      "certificateFile": "private/Arc24_Inc.pfx",
+      "verifyUpdateCodeSignature": false,
+      "publisherName": "Arc24_Inc"
+    },
+    "linux": {
+      "publish": [
+        "github"
+      ],
+      "category": "Network"
+    }
+  },
+  "author": "Arc24_Inc",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-builder": "^21.2.0",
+    "nodemon": "^2.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "electron-log": "^4.2.4",
+    "electron-store": "^6.0.0",
+    "electron-updater": "^4.3.4",
+    "fix-path": "^3.0.0",
+    "fs": "0.0.1-security",
+    "jquery": "^3.5.1"
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>ms_treams_login</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css" />
+    <link rel="stylesheet" href="assets/css/ms_login_styles.css" />
+  </head>
+
+  <body>
+    <div class="login-clean">
+      <form onsubmit="getFormvalue()" id="form1" disabled>
+        <h2 class="sr-only">Login Form</h2>
+        <div class="illustration"><i class="icon ion-ios-navigate"></i></div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+            id="ms_email"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+            id="ms_pass"
+          />
+        </div>
+        <div class="form-group">
+          <button
+            class="btn btn-primary btn-block"
+            type="submit"
+            id="submit_btn"
+          >
+            Log In
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            disabled
+            style="display: none;"
+            id="loading_btn"
+          >
+            <span
+              class="spinner-border spinner-border-sm"
+              role="status"
+              aria-hidden="true"
+            ></span>
+            Loading...
+          </button>
+        </div>
+        <p id="error_banner" style="display: none;">
+          Process not completed. Please try again
+        </p>
+      </form>
+    </div>
+
+    <script>
+      function getFormvalue() {
+        var x = document.getElementById("form1");
+        console.log("form html submitted");
+        formSubmit(x.elements["email"].value, x.elements["password"].value);
+      }
+    </script>
+    <script src="../index.js"></script>
+  </body>
+</html>
