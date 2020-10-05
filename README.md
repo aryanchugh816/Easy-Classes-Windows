@@ -1,7 +1,11 @@
-# Easy-Classes-Windows
+# Easy Classes
 It is a fully packaged software and not a script with dependencies
 
-Download [Easy Classes](#)
+Click the following image to see the intrductory video
+[![](https://github.com/aryanchugh816/Easy-Classes-Windows/blob/master/Pictures/icon_white_bg.jpg)](https://www.youtube.com/watch?v=FdAxgqUVlOc)
+
+Download [Easy Classes](https://github.com/aryanchugh816/Easy-Classes-Windows/releases/download/v1.1.1/Easy_Classes-Setup-1.1.1.exe)
+#### Available only for Windows
 
 ### Features
 - Integration with Vtop and Microsoft Teams
