@@ -2,7 +2,7 @@
   "name": "Easy_Classes",
   "version": "1.1.1",
   "description": "Be_more_efficient_as_my_software_attends_your_classes_for_you",
-  "main": "main.js",
+  "main": "temp.js",
   "scripts": {
     "start": "electron .",
     "watch": "nodemon --exec electron .",
