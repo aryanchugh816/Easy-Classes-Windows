@@ -3,21 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Downloading Easy Classes Update</title>
+    <title>Downloading Update</title>
+    <script>
+      window.$ = window.jQuery = require("jquery");
+    </script>
+    <link rel="stylesheet" href="assets/css/progress_style.css" />
   </head>
   <body>
-    <progress style="width: 100%" value="0" max="100"></progress>
+    <div class="scene" style="--hue: 260; --saturation: 85; --lightness: 54">
+      <div class="word">
+        <div class="letter__wrap" style="--index: 0">
+          <div class="letter" data-letter="D">
+            <span class="letter__panel" aria-hidden="true">D</span
+            ><span class="letter__panel" aria-hidden="true">W</span
+            ><span class="letter__panel" aria-hidden="true">D</span
+            ><span class="letter__panel" aria-hidden="true">W</span
+            ><span class="letter__panel"></span>
+          </div>
+        </div>
+        <div class="letter__wrap" style="--index: 1">
+          <div class="letter" data-letter="o">
+            <span class="letter__panel" aria-hidden="true">o</span
+            ><span class="letter__panel" aria-hidden="true">a</span
+            ><span class="letter__panel" aria-hidden="true">o</span
+            ><span class="letter__panel" aria-hidden="true">a</span
+            ><span class="letter__panel"></span>
+          </div>
+        </div>
+        <div class="letter__wrap" style="--index: 2">
+          <div class="letter" data-letter="w">
+            <span class="letter__panel" aria-hidden="true">w</span
+            ><span class="letter__panel" aria-hidden="true">i</span
+            ><span class="letter__panel" aria-hidden="true">w</span
+            ><span class="letter__panel" aria-hidden="true">i</span
+            ><span class="letter__panel"></span>
+          </div>
+        </div>
+        <div class="letter__wrap" style="--index: 3">
+          <div class="letter" data-letter="n">
+            <span class="letter__panel" aria-hidden="true">n</span
+            ><span class="letter__panel" aria-hidden="true">t</span
+            ><span class="letter__panel" aria-hidden="true">n</span
+            ><span class="letter__panel" aria-hidden="true">t</span
+            ><span class="letter__panel"></span>
+          </div>
+        </div>
+        <div class="letter__wrap" style="--index: 4">
+          <div class="letter" data-letter="l">
+            <span class="letter__panel" aria-hidden="true">l</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel" aria-hidden="true">l</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel"></span>
+          </div>
+        </div>
+        <div class="letter__wrap" style="--index: 5">
+          <div class="letter" data-letter="o">
+            <span class="letter__panel" aria-hidden="true">o</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel" aria-hidden="true">o</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel"></span>
+          </div>
+        </div>
+        <div class="letter__wrap" style="--index: 6">
+          <div class="letter" data-letter="a">
+            <span class="letter__panel" aria-hidden="true">a</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel" aria-hidden="true">a</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel"></span>
+          </div>
+        </div>
+        <div class="letter__wrap" style="--index: 7">
+          <div class="letter" data-letter="d">
+            <span class="letter__panel" aria-hidden="true">d</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel" aria-hidden="true">d</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel"></span>
+          </div>
+        </div>
+        <div class="letter__wrap" style="--index: 8">
+          <div class="letter" data-letter="i">
+            <span class="letter__panel" aria-hidden="true">i</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel" aria-hidden="true">i</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel"></span>
+          </div>
+        </div>
+        <div class="letter__wrap" style="--index: 9">
+          <div class="letter" data-letter="n">
+            <span class="letter__panel" aria-hidden="true">n</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel" aria-hidden="true">n</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel"></span>
+          </div>
+        </div>
+        <div class="letter__wrap" style="--index: 10">
+          <div class="letter" data-letter="g">
+            <span class="letter__panel" aria-hidden="true">g</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel" aria-hidden="true">g</span
+            ><span class="letter__panel" aria-hidden="true">.</span
+            ><span class="letter__panel"></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-
-  <script>
-    $ = require("jquery");
-
-    const { ipcRenderer } = require("electron");
-
-    setInterval(() => {
-      let progress = ipcRenderer.sendSync("download-progress-request");
-
-      $("progress").val(progress);
-    }, 1000);
-  </script>
 </html>
